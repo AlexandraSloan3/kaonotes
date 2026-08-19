@@ -15,4 +15,6 @@ keywords:
   - "research notes"
   - "KAN"
   - "linear algebra"
-version: 0.1.0-dev
+version: "0.1.1"
+doi: "10.5281/zenodo.22018510"
+date-released: "2026-08-19"
