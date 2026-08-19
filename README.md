@@ -2,7 +2,7 @@
 
 `KaoNotes` is a lightweight, research-oriented LaTeX framework developed alongside KAN research. It adapts the wide-margin design of [kaobook](https://github.com/fmarotta/kaobook) for compact academic notes, multilingual writing, mathematics, and computer-science material.
 
-> **Development status:** early working version. The current reference document converts the author's handwritten linear-algebra notes into structured LaTeX. The first public release will follow after the initial chapters and build workflow have been reviewed.
+> **Development status:** early working version. The current reference document is a linear-algebra chapter developed from notes made during KAN research preparation. It is also used to test the framework's typesetting and build workflow before the first release.
 
 ## Research context
 
@@ -22,9 +22,21 @@ Current goals:
 
 KaoNotes can be used for mathematics and computer-science writing, including lecture notes, derivations, proofs, formulas, algorithms, code examples, and research notes. It supports English, Traditional Chinese, Simplified Chinese, and mixed-language documents, so its scope is not limited to the linear-algebra example included in this repository.
 
+## Reference document
+
+The included chapter is both a set of study notes and a compact demonstration of KaoNotes. It contains:
+
+- matrix equations, vectors, and worked mathematical derivations;
+- a Traditional Chinese chapter title and introductory note;
+- a limited Simplified Chinese section heading, included to demonstrate font switching without disrupting the page design;
+- a short PyTorch tensor example set in monospaced type like a displayed formula;
+- definitions, remarks, and margin notes using the wide-margin layout and dark-grey boxes.
+
+These examples are intentionally brief. They show that one document can combine mathematics, English, Traditional Chinese, Simplified Chinese, and source code while keeping the main chapter visually consistent.
+
 ## Requirements
 
-Install a TeX distribution that provides XeLaTeX, `latexmk`, Biber, MakeIndex, and CJK fonts. The supplied configuration uses Noto Serif/Sans TC for Traditional Chinese and Noto Serif CJK SC for Simplified Chinese, with Microsoft YaHei as the Windows fallback. XeLaTeX is required for these multilingual settings.
+Install a TeX distribution that provides XeLaTeX, `latexmk`, Biber, MakeIndex, and the configured fonts. KaoNotes preserves Noto Serif/Sans TC for Traditional Chinese, uses LXGW Neo ZhiSong for the limited Simplified Chinese example, and uses JetBrains Mono for code. You may replace these names in `main.tex` with installed alternatives. XeLaTeX is required for the multilingual settings.
 
 ## Quick start
 
@@ -52,8 +64,8 @@ The complete file [`examples/multilingual-code.tex`](examples/multilingual-code.
 
 - English mathematical writing and a definition box;
 - a Traditional Chinese note with mixed English terminology;
-- a Simplified Chinese note and a blue information box;
-- a Python listing with a caption.
+- a Simplified Chinese note and a dark-grey information box;
+- a monochrome Python listing with a caption.
 
 Compile the example from the repository root:
 
