@@ -18,18 +18,8 @@ Zenodo archive / Zenodo 存檔：concept DOI / 概念 DOI [10.5281/zenodo.220185
 KaoNotes began as a personal typesetting tool for organising mathematics and computer-science notes during KAN research preparation. This repository publishes the framework as a standalone academic tool for general use. 
 KaoNotes 最初是在準備 KAN 研究期間，用來整理數學與計算機科學筆記的個人排版工具。本倉庫將框架作為獨立的學術工具公開，供一般使用。
 
-The linear-algebra material is based on the author's own study notes made while working through Gilbert Strang's *Introduction to Linear Algebra* and MIT 18.06. The repository records the author's explanations, calculations, and research connections; it does not reproduce the textbook text.
-
-線性代數內容以研讀 Gilbert Strang 的 *Introduction to Linear Algebra* 與 MIT 18.06 時所作的學習筆記為基礎。本倉庫記錄作者自己的解釋、計算與研究聯繫，不重製教科書原文。
-
-Current goals / 目前目標：
-
-- a small, reproducible XeLaTeX project / 建立小型且可重現編譯的 XeLaTeX 專案；
-- readable wide-margin layouts for definitions, remarks, figures, and citations / 為定義、註釋、圖表與引用提供易讀的寬邊註排版；
-- support for English, Traditional Chinese, and Simplified Chinese text / 支援英文、繁體中文及簡體中文；
-- a clean structure suitable for mathematical and computer-science notes / 提供適合數學與計算機科學筆記的清晰結構；
-- transparent attribution to the upstream kaobook project / 清楚標示上游 kaobook 專案的作者與來源。
-
+## Preview / 預覽
+[`kaonotes-preview.pdf`](kaonotes-preview.pdf)
 ## Writing scope / 書寫範圍
 
 KaoNotes can be used for mathematics and computer-science writing, including lecture notes, derivations, proofs, formulas, algorithms, code examples, and research notes. It supports English, Traditional Chinese, Simplified Chinese, and mixed-language documents, so its scope is not limited to the linear-algebra example included in this repository.
