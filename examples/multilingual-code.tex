@@ -17,9 +17,7 @@
 	\setCJKmainfont{Noto Serif TC}
 	\setCJKsansfont{Noto Sans TC}
 	\setCJKmonofont{Noto Sans TC}
-	\IfFontExistsTF{Noto Serif CJK SC}
-		{\newCJKfontfamily\zhHans{Noto Serif CJK SC}}
-		{\newCJKfontfamily\zhHans{Microsoft YaHei}}
+	\newCJKfontfamily\zhHans{LXGW Neo ZhiSong}[AutoFakeBold=2]
 \else
 	\usepackage[english]{babel}
 \fi
