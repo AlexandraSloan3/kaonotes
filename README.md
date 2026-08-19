@@ -10,9 +10,9 @@
 
 ## Research context / 研究背景
 
-The project grew out of a practical need to replace the handwritten files in [KAN-research-prep](https://github.com/AlexandraSloan3/KAN-research-prep) with searchable, reproducible notes. That repository records the broader preparation pathway in linear algebra, calculus, probability, and machine learning. `KaoNotes` is the typesetting system and maintained long-form version of those notes.
+KaoNotes began as a personal typesetting tool for organising mathematics and computer-science notes during KAN research preparation. This repository publishes the framework as a standalone academic tool for general use. The author's research notes and research process remain personal and are outside the public scope of this project.
 
-這個專案源於一項實際需要：以可搜尋、可重現的筆記取代 [KAN-research-prep](https://github.com/AlexandraSloan3/KAN-research-prep) 中的手寫文件。該倉庫記錄線性代數、微積分、概率與機器學習等較完整的準備過程；`KaoNotes` 則是這些筆記的排版系統及持續維護的長篇版本。
+KaoNotes 最初是作者在準備 KAN 研究期間，用來整理數學與計算機科學筆記的個人排版工具。本倉庫將框架作為獨立的學術工具公開，供一般使用。作者的研究筆記與研究過程仍屬個人內容，不在本專案的公開範圍內。
 
 The linear-algebra material is based on the author's own study notes made while working through Gilbert Strang's *Introduction to Linear Algebra* and MIT 18.06. The repository records the author's explanations, calculations, and research connections; it does not reproduce the textbook text.
 
