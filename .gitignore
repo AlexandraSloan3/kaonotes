@@ -1,0 +1,37 @@
+# LaTeX build artefacts
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.mw
+*.nlo
+*.nls
+*.out
+*.pdf
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+*.xdy
+
+# Local scratch and editor files
+tmp/
+images/
+*.bak
+*.swp
+*~
