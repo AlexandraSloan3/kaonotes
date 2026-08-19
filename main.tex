@@ -45,9 +45,11 @@
 	\setCJKmainfont{Noto Serif TC}
 	\setCJKsansfont{Noto Sans TC}
 	\setCJKmonofont{Noto Sans TC}
-	\IfFontExistsTF{Noto Serif CJK SC}
-		{\newCJKfontfamily\zhHans{Noto Serif CJK SC}}
-		{\newCJKfontfamily\zhHans{Microsoft YaHei}}
+	\setmonofont{JetBrains Mono}[Scale=MatchLowercase]
+	% Preserve the Traditional Chinese face; use a restrained companion for Simplified Chinese.
+	\newCJKfontfamily\zhHans{LXGW Neo ZhiSong}[AutoFakeBold=2]
+	\newfontfamily\codefont{JetBrains Mono}[Scale=MatchLowercase]
+	\newcommand{\CodeLine}[1]{\text{\codefont\footnotesize\detokenize{#1}}}
 \else
 	\usepackage[english]{babel} % Load characters and hyphenation
 \fi
