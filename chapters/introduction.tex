@@ -1,15 +1,15 @@
 \setchapterpreamble[u]{\margintoc}
-\chapter{Vectors and Linear Equations}
+\chapter{向量與線性方程}
 \labch{vectors-linear-equations}
 
-This chapter converts the author's handwritten notes from the first linear
-algebra study session into a reproducible mathematical record. The discussion
-follows the central viewpoint used in Gilbert Strang's linear algebra course:
-a linear system can be understood either through its rows or through its
-columns. The wording and worked commentary here are original study notes,
-written to support later work on Kolmogorov--Arnold Networks (KANs).
+我在準備 KAN 研究時重新整理了這份線性代數筆記。本章沿用
+Gilbert Strang 的 \emph{Introduction to Linear Algebra} 與 MIT 18.06
+中的行、列兩種觀點，保留我自己的推導、計算，以及和後續程式實驗
+直接相關的部分；內容不是教材摘錄。章名用繁體中文，節名用簡體中文，
+正文以英文為主，讓這一章同時成為 KaoNotes 多語排版的可編譯範例。
 
-\section[Linear Systems]{A Linear System as \texorpdfstring{$A\mathbf{x}=\mathbf{b}$}{Ax=b}}
+\section[\zhHans 线性方程组]{\zhHans 线性方程组与
+\texorpdfstring{$A\mathbf{x}=\mathbf{b}$}{Ax=b}}
 
 A system of linear equations can be compressed into the matrix equation
 
@@ -61,7 +61,7 @@ Two especially useful interpretations are the \emph{row picture} and the
 \emph{column picture}.
 \end{remark}
 
-\section{The Row Picture}
+\section{\zhHans 行图像}
 
 Each row of a three-variable system describes a plane in
 \(\mathbb{R}^{3}\). Solving the system means finding a point that lies on all
@@ -80,7 +80,7 @@ The row picture is therefore most useful as a conceptual bridge. It explains
 why a solution must satisfy every equation simultaneously, while elimination
 provides a systematic procedure that works in any finite dimension.
 
-\section{The Column Picture}
+\section{\zhHans 列图像}
 
 Let \(\mathbf{a}_1,\mathbf{a}_2,\mathbf{a}_3\) denote the columns of \(A\).
 Then
@@ -141,7 +141,7 @@ The column picture focuses on construction. Solving the system asks:
 \emph{Which combination of the available columns produces the target?}
 \end{remark}
 
-\section[Matrix--Vector Products]{Matrix--Vector Multiplication}
+\section[\zhHans 矩阵--向量乘积]{\zhHans 矩阵--向量乘法}
 
 The column viewpoint gives the most useful definition of matrix--vector
 multiplication. If
@@ -184,7 +184,18 @@ Both calculations are valid, but they answer different questions. The
 row-by-column rule is efficient for computing entries; the combination-of-
 columns rule explains what the product means geometrically.
 
-\section[Reachability and Invertibility]{Reachability, Independence, and Invertibility}
+The same calculation can be expressed directly with PyTorch tensors:
+
+\begin{lstlisting}[language=Python, caption={PyTorch tensor implementation}]
+import torch
+
+A = torch.tensor([[2., 5.], [1., 3.]])
+x = torch.tensor([1., 2.])
+b = A @ x
+print(b)  # tensor([12., 7.])
+\end{lstlisting}
+
+\section[\zhHans 可达性与可逆性]{\zhHans 可达性、线性无关与可逆性}
 
 For a square matrix \(A\in\mathbb{R}^{n\times n}\), an important question is
 whether \(A\mathbf{x}=\mathbf{b}\) can be solved for \emph{every}
@@ -215,7 +226,7 @@ representation.
     solution or infinitely many solutions.
 \end{description}
 
-\section[Relevance to KAN Study]{Why This Viewpoint Matters for KAN Study}
+\section[\zhHans 与 KAN 研究的联系]{\zhHans 与 KAN 研究的联系}
 
 Later work with neural networks repeatedly uses vectors for data and features,
 matrices for batched computation and linear transformations, and spaces for
