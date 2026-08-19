@@ -44,6 +44,10 @@
 	\usepackage{xeCJK}
 	\setCJKmainfont{Noto Serif TC}
 	\setCJKsansfont{Noto Sans TC}
+	\setCJKmonofont{Noto Sans TC}
+	\IfFontExistsTF{Noto Serif CJK SC}
+		{\newCJKfontfamily\zhHans{Noto Serif CJK SC}}
+		{\newCJKfontfamily\zhHans{Microsoft YaHei}}
 \else
 	\usepackage[english]{babel} % Load characters and hyphenation
 \fi

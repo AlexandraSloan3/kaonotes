@@ -6,6 +6,7 @@ authors:
   - family-names: "Song"
     given-names: "J"
     alias: "Alex"
+    email: "alexandra.sung@protonmail.com"
 repository-code: "https://github.com/AlexandraSloan3/kaonotes"
 abstract: "A lightweight, multilingual LaTeX workspace that converts handwritten mathematical and computer-science study notes into a reproducible research record for KAN preparation."
 keywords:

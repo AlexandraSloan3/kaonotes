@@ -19,3 +19,5 @@ This repository includes the following files from the [`fmarotta/kaobook`](https
 Kaobook was created by Federico Marotta, based on the doctoral-thesis layout of Ken Arroyo Ohori and ideas from Tufte-LaTeX, with LaTeX Templates adaptations by Vel. The upstream source headers and `MANIFEST.md` are preserved. These class and package files remain subject to the LaTeX Project Public License stated by the upstream project.
 
 Project-level configuration, build scripts, and newly written notes are maintained separately from the upstream kaobook class. A separate licence for the maintainer's original content will be selected before the first public release.
+
+The maintainer's original material currently includes `README.md`, the project-level configuration in `main.tex`, `build.ps1`, `latexmkrc`, `chapters/`, and `examples/`. These files remain copyright J Song (Alex) until a separate licence is selected. Users may use the LPPL-covered framework to create their own documents; copyright in those documents belongs to their respective authors.
