@@ -1,5 +1,10 @@
 # KaoNotes
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22018511.svg)](https://doi.org/10.5281/zenodo.22018511)
+
+Zenodo archive / Zenodo 存檔：[10.5281/zenodo.22018511](https://doi.org/10.5281/zenodo.22018511)
+
+
 `KaoNotes` is a lightweight, research-oriented LaTeX framework developed alongside KAN research. It adapts the wide-margin design of [kaobook](https://github.com/fmarotta/kaobook) for compact academic notes, multilingual writing, mathematics, and computer-science material.
 
 `KaoNotes` 是一套在 KAN 研究過程中開發的輕量 LaTeX 學術筆記框架。它改編自 [kaobook](https://github.com/fmarotta/kaobook) 的寬邊註排版，用於簡潔的學術筆記、多語書寫、數學與計算機科學內容。
