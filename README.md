@@ -4,9 +4,9 @@
 
 `KaoNotes` 是一套在 KAN 研究過程中開發的輕量 LaTeX 學術筆記框架。它改編自 [kaobook](https://github.com/fmarotta/kaobook) 的寬邊註排版，用於簡潔的學術筆記、多語書寫、數學與計算機科學內容。
 
-> **Development status / 開發狀態：** Early working version. The current reference document is a linear-algebra chapter developed from notes made during KAN research preparation. It is also used to test the framework's typesetting and build workflow before the first release.
+> **Current release / 目前版本：** v0.1.0 is the first public release of KaoNotes. The repository includes the framework, reproducible build files, and a compact reference chapter for mathematics, multilingual text, and code.
 >
-> 目前為早期可用版本。現有參考文檔是一章線性代數筆記，源於 KAN 研究準備期間的學習記錄，也用於在首次發佈前測試框架的排版與編譯流程。
+> v0.1.0 是 KaoNotes 的首個正式公開版本。倉庫包含框架、可重現的編譯文件，以及展示數學、多語文字與代碼排版的簡短參考章節。
 
 ## Research context / 研究背景
 
@@ -118,17 +118,17 @@ def square(x):
 
 ## Permissions and licensing / 使用權限與授權
 
-This repository is derived from Federico Marotta's [kaobook](https://github.com/fmarotta/kaobook), itself based on work by Ken Arroyo Ohori and Tufte-LaTeX. Upstream authorship is preserved in the source headers and `MANIFEST.md`.
+KaoNotes uses file-level dual licensing. The kaobook-derived class, package files, and project-level framework are distributed under the LaTeX Project Public License 1.3c or later. The maintainer's original reference-note prose, calculations, examples, and compiled reference document are distributed under the Creative Commons Attribution-NonCommercial 4.0 International licence.
 
-本倉庫改編自 Federico Marotta 的 [kaobook](https://github.com/fmarotta/kaobook)，而 kaobook 本身以 Ken Arroyo Ohori 與 Tufte-LaTeX 的工作為基礎。上游作者資訊保留於源文件標頭與 `MANIFEST.md` 中。
+KaoNotes 採用按文件區分的雙重授權。由 kaobook 衍生的文檔類別、套件文件及專案級框架依 LaTeX Project Public License 1.3c 或更新版本發佈；維護者原創的參考筆記正文、計算、示例及其編譯文檔則依 Creative Commons Attribution-NonCommercial 4.0 International 授權發佈。
 
-The kaobook-derived class and package files remain under the LaTeX Project Public License 1.3 or later, as described in `MANIFEST.md`. That licence permits use, study, modification, and redistribution under its terms. Documents that you produce with KaoNotes remain your own work.
+This repository is derived from Federico Marotta's [kaobook](https://github.com/fmarotta/kaobook), itself based on work by Ken Arroyo Ohori and Tufte-LaTeX. Upstream authorship is preserved in the source headers and MANIFEST.md. Documents produced with KaoNotes remain the work of their respective authors.
 
-由 kaobook 衍生的文檔類別及套件文件仍依 `MANIFEST.md` 所述，採用 LaTeX Project Public License 1.3 或更新版本。該授權允許依其條款使用、研究、修改及再發佈。使用 KaoNotes 製作的文檔仍屬於其作者自己的作品。
+本倉庫改編自 Federico Marotta 的 [kaobook](https://github.com/fmarotta/kaobook)，而 kaobook 本身以 Ken Arroyo Ohori 與 Tufte-LaTeX 的工作為基礎。上游作者資訊保留於源文件標頭與 MANIFEST.md 中。使用 KaoNotes 製作的文檔仍屬於其各自作者。
 
-Upstream templates and examples retain their stated CC0 dedication. The maintainer's newly written study-note prose and project documentation remain copyright J Song (Alex); no additional content licence is granted until a separate licence is selected for the first public release. See `NOTICE.md` for the file-level attribution boundary.
+See [LICENSE.md](LICENSE.md), [LICENSE-LPPL-1.3c.txt](LICENSE-LPPL-1.3c.txt), [LICENSE-CONTENT.md](LICENSE-CONTENT.md), and [NOTICE.md](NOTICE.md) for the exact file boundary and attribution details.
 
-上游模板與示例保留其原有的 CC0 聲明。維護者新撰寫的學習筆記正文與專案文檔之版權屬 J Song (Alex)；在首次正式發佈另行選定授權以前，未授予額外的內容使用許可。各文件的歸屬界線請參閱 `NOTICE.md`。
+各文件的授權範圍及署名方式請參閱 [LICENSE.md](LICENSE.md)、[LICENSE-LPPL-1.3c.txt](LICENSE-LPPL-1.3c.txt)、[LICENSE-CONTENT.md](LICENSE-CONTENT.md) 及 [NOTICE.md](NOTICE.md)。
 
 ## Contact / 聯絡方式
 
