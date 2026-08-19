@@ -14,9 +14,13 @@ Current goals:
 
 - a small, reproducible XeLaTeX project;
 - readable wide-margin layouts for definitions, remarks, figures, and citations;
-- support for English and Traditional Chinese text;
+- support for English, Traditional Chinese, and Simplified Chinese text;
 - a clean structure suitable for mathematical and computer-science notes;
 - transparent attribution to the upstream kaobook project.
+
+## Writing scope
+
+KaoNotes can be used for mathematics and computer-science writing, including lecture notes, derivations, proofs, formulas, algorithms, code examples, and research notes. It supports English, Traditional Chinese, Simplified Chinese, and mixed-language documents, so its scope is not limited to the linear-algebra example included in this repository.
 
 ## Build
 
