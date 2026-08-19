@@ -94,4 +94,4 @@ Upstream templates and examples retain their stated CC0 dedication. The maintain
 
 ## Contact
 
-KaoNotes is maintained by J Song (Alex), [@AlexandraSloan3](https://github.com/AlexandraSloan3). Academic and direct enquiries may be sent to [alexandra.sung@protonmail.com](mailto:alexandra.sung@protonmail.com). For usage questions, reproducible build problems, or feature requests, open a [GitHub issue](https://github.com/AlexandraSloan3/kaonotes/issues). Please include the TeX engine, operating system, and a minimal example when reporting a compilation problem.
+KaoNotes is maintained by J Song (Alex), [@AlexandraSloan3](https://github.com/AlexandraSloan3). Academic and direct enquiries may be sent to [jsong.alex@proton.me](mailto:jsong.alex@proton.me). For usage questions, reproducible build problems, or feature requests, open a [GitHub issue](https://github.com/AlexandraSloan3/kaonotes/issues). Please include the TeX engine, operating system, and a minimal example when reporting a compilation problem.
