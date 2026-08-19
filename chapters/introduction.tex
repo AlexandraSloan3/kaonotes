@@ -1,0 +1,235 @@
+\setchapterpreamble[u]{\margintoc}
+\chapter{Vectors and Linear Equations}
+\labch{vectors-linear-equations}
+
+This chapter converts the author's handwritten notes from the first linear
+algebra study session into a reproducible mathematical record. The discussion
+follows the central viewpoint used in Gilbert Strang's linear algebra course:
+a linear system can be understood either through its rows or through its
+columns. The wording and worked commentary here are original study notes,
+written to support later work on Kolmogorov--Arnold Networks (KANs).
+
+\section[Linear Systems]{A Linear System as \texorpdfstring{$A\mathbf{x}=\mathbf{b}$}{Ax=b}}
+
+A system of linear equations can be compressed into the matrix equation
+
+\[
+    A\mathbf{x}=\mathbf{b},
+\]
+
+where \(A\in\mathbb{R}^{m\times n}\) contains the coefficients,
+\(\mathbf{x}\in\mathbb{R}^{n}\) contains the unknowns, and
+\(\mathbf{b}\in\mathbb{R}^{m}\) is the target vector. Consider
+
+\[
+    A=
+    \begin{bmatrix}
+        2 & -1 & 0 \\
+        -1 & 2 & -1 \\
+        0 & -3 & 4
+    \end{bmatrix},
+    \qquad
+    \mathbf{b}=
+    \begin{bmatrix}
+        0 \\
+        -1 \\
+        4
+    \end{bmatrix}.
+\]
+
+Writing the equation row by row gives
+
+\begin{align*}
+    2x-y       &= 0, \\
+    -x+2y-z    &= -1, \\
+    -3y+4z     &= 4.
+\end{align*}
+
+The vector
+
+\[
+    \mathbf{x}=
+    \begin{bmatrix}0&0&1\end{bmatrix}^{\mathsf T}
+\]
+
+is a solution because direct substitution returns \(\mathbf{b}\).
+
+\begin{remark}
+The notation \(A\mathbf{x}=\mathbf{b}\) is not merely shorter. It exposes
+structure that is difficult to see when the equations are treated separately.
+Two especially useful interpretations are the \emph{row picture} and the
+\emph{column picture}.
+\end{remark}
+
+\section{The Row Picture}
+
+Each row of a three-variable system describes a plane in
+\(\mathbb{R}^{3}\). Solving the system means finding a point that lies on all
+three planes at once. For the example above, the common point is
+\((0,0,1)\).
+
+This geometric interpretation is intuitive in two or three dimensions, but it
+does not scale well as a visual method. A system with nine unknowns would
+involve hyperplanes in \(\mathbb{R}^{9}\), which cannot be drawn directly.
+The algebra, however, remains unchanged.
+
+\marginnote{The row picture emphasises constraints: every row adds one
+condition that a candidate solution must satisfy.}
+
+The row picture is therefore most useful as a conceptual bridge. It explains
+why a solution must satisfy every equation simultaneously, while elimination
+provides a systematic procedure that works in any finite dimension.
+
+\section{The Column Picture}
+
+Let \(\mathbf{a}_1,\mathbf{a}_2,\mathbf{a}_3\) denote the columns of \(A\).
+Then
+
+\[
+    A\mathbf{x}
+    =x\mathbf{a}_1+y\mathbf{a}_2+z\mathbf{a}_3.
+\]
+
+For the running example, the same system becomes
+
+\[
+    x\begin{bmatrix}2\\-1\\0\end{bmatrix}
+    +y\begin{bmatrix}-1\\2\\-3\end{bmatrix}
+    +z\begin{bmatrix}0\\-1\\4\end{bmatrix}
+    =\begin{bmatrix}0\\-1\\4\end{bmatrix}.
+\]
+
+The solution \((x,y,z)=(0,0,1)\) is immediately visible: the target is the
+third column of \(A\). The important idea is broader than this convenient
+case.
+
+\begin{definition}
+A vector \(\mathbf{b}\) is a \emph{linear combination} of
+\(\mathbf{a}_1,\ldots,\mathbf{a}_n\) if there are scalars
+\(x_1,\ldots,x_n\) such that
+\[
+    \mathbf{b}=x_1\mathbf{a}_1+\cdots+x_n\mathbf{a}_n.
+\]
+The set of every such combination is the \emph{column space} of \(A\),
+written \(\operatorname{Col}(A)\).
+\end{definition}
+
+Consequently,
+
+\[
+    A\mathbf{x}=\mathbf{b}
+    \quad\text{has a solution if and only if}\quad
+    \mathbf{b}\in\operatorname{Col}(A).
+\]
+
+Changing the target vector tests a different combination of the same columns.
+For example,
+
+\[
+    \begin{bmatrix}1\\1\\-3\end{bmatrix}
+    =
+    \begin{bmatrix}2\\-1\\0\end{bmatrix}
+    +
+    \begin{bmatrix}-1\\2\\-3\end{bmatrix},
+\]
+
+so the corresponding system has the solution
+\(\mathbf{x}=[1,1,0]^{\mathsf T}\).
+
+\begin{remark}
+The column picture focuses on construction. Solving the system asks:
+\emph{Which combination of the available columns produces the target?}
+\end{remark}
+
+\section[Matrix--Vector Products]{Matrix--Vector Multiplication}
+
+The column viewpoint gives the most useful definition of matrix--vector
+multiplication. If
+
+\[
+    A=\begin{bmatrix}\vert&&\vert\\
+    \mathbf{a}_1&\cdots&\mathbf{a}_n\\
+    \vert&&\vert\end{bmatrix}
+    \quad\text{and}\quad
+    \mathbf{x}=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix},
+\]
+
+then
+
+\[
+    A\mathbf{x}=x_1\mathbf{a}_1+\cdots+x_n\mathbf{a}_n.
+\]
+
+For instance,
+
+\[
+    \begin{bmatrix}2&5\\1&3\end{bmatrix}
+    \begin{bmatrix}1\\2\end{bmatrix}
+    =1\begin{bmatrix}2\\1\end{bmatrix}
+    +2\begin{bmatrix}5\\3\end{bmatrix}
+    =\begin{bmatrix}12\\7\end{bmatrix}.
+\]
+
+The familiar row-by-column rule produces the same result:
+
+\[
+    \begin{bmatrix}
+        2\cdot1+5\cdot2\\
+        1\cdot1+3\cdot2
+    \end{bmatrix}
+    =\begin{bmatrix}12\\7\end{bmatrix}.
+\]
+
+Both calculations are valid, but they answer different questions. The
+row-by-column rule is efficient for computing entries; the combination-of-
+columns rule explains what the product means geometrically.
+
+\section[Reachability and Invertibility]{Reachability, Independence, and Invertibility}
+
+For a square matrix \(A\in\mathbb{R}^{n\times n}\), an important question is
+whether \(A\mathbf{x}=\mathbf{b}\) can be solved for \emph{every}
+\(\mathbf{b}\in\mathbb{R}^{n}\). In the column picture, this asks whether the
+columns of \(A\) fill the entire space:
+
+\[
+    \operatorname{Col}(A)=\mathbb{R}^{n}.
+\]
+
+If the columns are linearly independent and span \(\mathbb{R}^{n}\), then
+every target is reachable by exactly one coefficient vector. The matrix is
+invertible, and
+
+\[
+    \mathbf{x}=A^{-1}\mathbf{b}.
+\]
+
+If the columns are dependent, at least one column contributes no genuinely new
+direction. The matrix is singular. Some targets then lie outside the column
+space and cannot be reached; other targets may have more than one
+representation.
+
+\begin{description}
+    \item[Invertible case] Every \(\mathbf{b}\in\mathbb{R}^{n}\) has one and
+    only one solution.
+    \item[Singular case] Depending on \(\mathbf{b}\), the system has no
+    solution or infinitely many solutions.
+\end{description}
+
+\section[Relevance to KAN Study]{Why This Viewpoint Matters for KAN Study}
+
+Later work with neural networks repeatedly uses vectors for data and features,
+matrices for batched computation and linear transformations, and spaces for
+describing which outputs a model can represent. KANs change how learnable
+transformations are parameterised, but they do not remove the need to reason
+about dimensions, transformations, independence, and numerical computation.
+
+The practical lesson from this chapter is therefore simple:
+
+\begin{quote}
+Treat \(A\mathbf{x}\) as a combination of the columns of \(A\), while keeping
+the row equations available as explicit constraints.
+\end{quote}
+
+This dual viewpoint will guide the later notes on elimination, matrix
+factorisation, vector spaces, eigenvalues, optimisation, and model
+implementation.
