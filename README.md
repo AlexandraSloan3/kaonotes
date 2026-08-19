@@ -1,12 +1,12 @@
-# kaobook-lite
+# KaoNotes
 
-`kaobook-lite` is a lightweight, research-oriented LaTeX workspace developed alongside KAN research. It adapts the wide-margin design of [kaobook](https://github.com/fmarotta/kaobook) for compact academic notes, multilingual writing, mathematics, and computer-science material.
+`KaoNotes` is a lightweight, research-oriented LaTeX framework developed alongside KAN research. It adapts the wide-margin design of [kaobook](https://github.com/fmarotta/kaobook) for compact academic notes, multilingual writing, mathematics, and computer-science material.
 
 > **Development status:** early working version. The current reference document converts the author's handwritten linear-algebra notes into structured LaTeX. The first public release will follow after the initial chapters and build workflow have been reviewed.
 
 ## Research context
 
-The project grew out of a practical need to replace the handwritten files in [KAN-research-prep](https://github.com/AlexandraSloan3/KAN-research-prep) with searchable, reproducible notes. That repository records the broader preparation pathway in linear algebra, calculus, probability, and machine learning. `kaobook-lite` is the typesetting system and maintained long-form version of those notes.
+The project grew out of a practical need to replace the handwritten files in [KAN-research-prep](https://github.com/AlexandraSloan3/KAN-research-prep) with searchable, reproducible notes. That repository records the broader preparation pathway in linear algebra, calculus, probability, and machine learning. `KaoNotes` is the typesetting system and maintained long-form version of those notes.
 
 The linear-algebra material is based on the author's own study notes made while working through Gilbert Strang's *Introduction to Linear Algebra* and MIT 18.06. The repository records the author's explanations, calculations, and research connections; it does not reproduce the textbook text.
 
@@ -38,7 +38,6 @@ The generated `main.pdf` is intentionally not tracked during development.
 
 - `main.tex` - document configuration and entry point
 - `chapters/` - research-note chapters
-- `images/` - figures used by the example document
 - `kaobook.cls` and `kao*.sty` - upstream class and supporting packages
 - `build.ps1` and `latexmkrc` - reproducible local build configuration
 

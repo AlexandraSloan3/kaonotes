@@ -2,7 +2,7 @@
 
 ## Purpose of this repository
 
-`kaobook-lite` is maintained by J Song (Alex) as a LaTeX workspace for converting personal handwritten mathematics and computer-science notes into a reproducible research record. It is developed alongside the public [`KAN-research-prep`](https://github.com/AlexandraSloan3/KAN-research-prep) study repository.
+`KaoNotes` is maintained by J Song (Alex) as a LaTeX framework for converting personal handwritten mathematics and computer-science notes into a reproducible research record. It is developed alongside the public [`KAN-research-prep`](https://github.com/AlexandraSloan3/KAN-research-prep) study repository.
 
 The prose, calculations, structure, and KAN-oriented commentary in `chapters/introduction.tex` are original study-note material derived from the maintainer's handwritten notes. Gilbert Strang's *Introduction to Linear Algebra* and MIT 18.06 are learning sources and are not redistributed by this project.
 

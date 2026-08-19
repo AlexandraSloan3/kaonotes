@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this project in academic work, please cite it using the metadata below."
-title: "kaobook-lite"
+title: "KaoNotes"
 type: software
 authors:
   - family-names: "Song"
     given-names: "J"
     alias: "Alex"
-repository-code: "https://github.com/AlexandraSloan3/kaobook-lite"
+repository-code: "https://github.com/AlexandraSloan3/kaonotes"
 abstract: "A lightweight, multilingual LaTeX workspace that converts handwritten mathematical and computer-science study notes into a reproducible research record for KAN preparation."
 keywords:
   - "LaTeX"
