@@ -1,17 +1,17 @@
 # KaoNotes
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22018511.svg)](https://doi.org/10.5281/zenodo.22018511)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22018510.svg)](https://doi.org/10.5281/zenodo.22018510)
 
-Zenodo archive / Zenodo 存檔：[10.5281/zenodo.22018511](https://doi.org/10.5281/zenodo.22018511)
+Zenodo archive / Zenodo 存檔：concept DOI / 概念 DOI [10.5281/zenodo.22018510](https://doi.org/10.5281/zenodo.22018510) · current version / 目前版本 [10.5281/zenodo.22018865](https://doi.org/10.5281/zenodo.22018865)
 
 
 `KaoNotes` is a lightweight, research-oriented LaTeX framework developed alongside KAN research. It adapts the wide-margin design of [kaobook](https://github.com/fmarotta/kaobook) for compact academic notes, multilingual writing, mathematics, and computer-science material.
 
 `KaoNotes` 是一套在 KAN 研究過程中開發的輕量 LaTeX 學術筆記框架。它改編自 [kaobook](https://github.com/fmarotta/kaobook) 的寬邊註排版，用於簡潔的學術筆記、多語書寫、數學與計算機科學內容。
 
-> **Current release / 目前版本：** v0.1.0 is the first public release of KaoNotes. The repository includes the framework, reproducible build files, and a compact reference chapter for mathematics, multilingual text, and code.
+> **Current release / 目前版本：** v0.1.1 synchronises the published four-page preview and source package, restores Noto Serif TC for Traditional Chinese, and credits J Song (Alex) on the cover.
 >
-> v0.1.0 是 KaoNotes 的首個正式公開版本。倉庫包含框架、可重現的編譯文件，以及展示數學、多語文字與代碼排版的簡短參考章節。
+> v0.1.1 同步正式發佈的四頁預覽與來源包，恢復繁體中文的 Noto Serif TC 字體，並在封面標示作者 J Song (Alex)。
 
 ## Research context / 研究背景
 
