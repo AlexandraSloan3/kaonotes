@@ -1,0 +1,95 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% KaoNotes multilingual and code example
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+	a4paper,
+	fontsize=10pt,
+	open=any,
+	titlepage=false,
+	numbers=noenddot,
+]{kaobook}
+
+\ifxetexorluatex
+	\usepackage{polyglossia}
+	\setmainlanguage{english}
+	\usepackage{xeCJK}
+	\setCJKmainfont{Noto Serif TC}
+	\setCJKsansfont{Noto Sans TC}
+	\setCJKmonofont{Noto Sans TC}
+	\IfFontExistsTF{Noto Serif CJK SC}
+		{\newCJKfontfamily\zhHans{Noto Serif CJK SC}}
+		{\newCJKfontfamily\zhHans{Microsoft YaHei}}
+\else
+	\usepackage[english]{babel}
+\fi
+
+\usepackage[framed=true]{kaotheorems}
+\usepackage{kaorefs}
+
+\title{KaoNotes Usage Examples}
+\subtitle{English, Traditional Chinese, Simplified Chinese, and Code}
+\author{J Song (Alex)}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\chapter{Multilingual and Code Examples}
+
+\section{English mathematics}
+
+For a matrix \(A\in\mathbb{R}^{m\times n}\) and a vector
+\(\mathbf{x}\in\mathbb{R}^{n}\), the product \(A\mathbf{x}\) is a linear
+combination of the columns of \(A\).
+
+\begin{definition}
+The column space of \(A\) is the set of all vectors that can be written as
+\(A\mathbf{x}\).
+\end{definition}
+
+\section{繁體中文範例}
+
+若矩陣 \(A\) 的行向量線性獨立，則方程 \(A\mathbf{x}=\mathbf{b}\)
+對每個可達的目標向量都有唯一表示。KaoNotes 可用於整理數學推導、
+演算法筆記、課堂內容與研究紀錄。
+
+\begin{remark}
+中英文可以在同一段落中混合排版，例如：矩陣乘法
+\emph{matrix multiplication} 與向量空間 \emph{vector space}。
+\end{remark}
+
+\begingroup
+\zhHans
+
+\section{\zhHans 简体中文示例}
+
+矩阵可以表示线性变换。通过列空间的观点，求解
+\(A\mathbf{x}=\mathbf{b}\) 等价于判断目标向量 \(\mathbf{b}\)
+能否由矩阵 \(A\) 的列向量线性组合得到。
+
+\begin{kaobox}[frametitle={\zhHans 书写范围}]
+可用于数学公式、证明、计算机科学笔记、算法说明、代码示例和研究记录。
+\end{kaobox}
+
+\endgroup
+
+\section{Python code example}
+
+Use the standard \texttt{lstlisting} environment for source code.
+
+\begin{lstlisting}[language=Python, caption={Matrix-vector multiplication}]
+def matvec(matrix, vector):
+    """Return the matrix-vector product."""
+    return [
+        sum(value * vector[j] for j, value in enumerate(row))
+        for row in matrix
+    ]
+
+A = [[2, 5], [1, 3]]
+x = [1, 2]
+print(matvec(A, x))  # [12, 7]
+\end{lstlisting}
+
+\end{document}
