@@ -2,55 +2,71 @@
 
 `KaoNotes` is a lightweight, research-oriented LaTeX framework developed alongside KAN research. It adapts the wide-margin design of [kaobook](https://github.com/fmarotta/kaobook) for compact academic notes, multilingual writing, mathematics, and computer-science material.
 
-> **Development status:** early working version. The current reference document is a linear-algebra chapter developed from notes made during KAN research preparation. It is also used to test the framework's typesetting and build workflow before the first release.
+`KaoNotes` 是一套在 KAN 研究過程中開發的輕量 LaTeX 學術筆記框架。它改編自 [kaobook](https://github.com/fmarotta/kaobook) 的寬邊註排版，用於簡潔的學術筆記、多語書寫、數學與計算機科學內容。
 
-## Research context
+> **Development status / 開發狀態：** Early working version. The current reference document is a linear-algebra chapter developed from notes made during KAN research preparation. It is also used to test the framework's typesetting and build workflow before the first release.
+>
+> 目前為早期可用版本。現有參考文檔是一章線性代數筆記，源於 KAN 研究準備期間的學習記錄，也用於在首次發佈前測試框架的排版與編譯流程。
+
+## Research context / 研究背景
 
 The project grew out of a practical need to replace the handwritten files in [KAN-research-prep](https://github.com/AlexandraSloan3/KAN-research-prep) with searchable, reproducible notes. That repository records the broader preparation pathway in linear algebra, calculus, probability, and machine learning. `KaoNotes` is the typesetting system and maintained long-form version of those notes.
 
+這個專案源於一項實際需要：以可搜尋、可重現的筆記取代 [KAN-research-prep](https://github.com/AlexandraSloan3/KAN-research-prep) 中的手寫文件。該倉庫記錄線性代數、微積分、概率與機器學習等較完整的準備過程；`KaoNotes` 則是這些筆記的排版系統及持續維護的長篇版本。
+
 The linear-algebra material is based on the author's own study notes made while working through Gilbert Strang's *Introduction to Linear Algebra* and MIT 18.06. The repository records the author's explanations, calculations, and research connections; it does not reproduce the textbook text.
 
-Current goals:
+線性代數內容以作者研讀 Gilbert Strang 的 *Introduction to Linear Algebra* 與 MIT 18.06 時所作的學習筆記為基礎。本倉庫記錄作者自己的解釋、計算與研究聯繫，不重製教科書原文。
 
-- a small, reproducible XeLaTeX project;
-- readable wide-margin layouts for definitions, remarks, figures, and citations;
-- support for English, Traditional Chinese, and Simplified Chinese text;
-- a clean structure suitable for mathematical and computer-science notes;
-- transparent attribution to the upstream kaobook project.
+Current goals / 目前目標：
 
-## Writing scope
+- a small, reproducible XeLaTeX project / 建立小型且可重現編譯的 XeLaTeX 專案；
+- readable wide-margin layouts for definitions, remarks, figures, and citations / 為定義、註釋、圖表與引用提供易讀的寬邊註排版；
+- support for English, Traditional Chinese, and Simplified Chinese text / 支援英文、繁體中文及簡體中文；
+- a clean structure suitable for mathematical and computer-science notes / 提供適合數學與計算機科學筆記的清晰結構；
+- transparent attribution to the upstream kaobook project / 清楚標示上游 kaobook 專案的作者與來源。
+
+## Writing scope / 書寫範圍
 
 KaoNotes can be used for mathematics and computer-science writing, including lecture notes, derivations, proofs, formulas, algorithms, code examples, and research notes. It supports English, Traditional Chinese, Simplified Chinese, and mixed-language documents, so its scope is not limited to the linear-algebra example included in this repository.
 
-## Reference document
+KaoNotes 可用於數學與計算機科學寫作，包括課堂筆記、推導、證明、公式、算法、代碼示例及研究筆記。它支援英文、繁體中文、簡體中文及多語混排，因此用途不限於本倉庫所附的線性代數示例。
+
+## Reference document / 參考文檔
 
 The included chapter is both a set of study notes and a compact demonstration of KaoNotes. It contains:
 
-- matrix equations, vectors, and worked mathematical derivations;
-- a Traditional Chinese chapter title and introductory note;
-- a limited Simplified Chinese section heading, included to demonstrate font switching without disrupting the page design;
-- a short PyTorch tensor example set in monospaced type like a displayed formula;
-- definitions, remarks, and margin notes using the wide-margin layout and dark-grey boxes.
+所附章節既是一份學習筆記，也是 KaoNotes 的簡短示例，其中包括：
+
+- matrix equations, vectors, and worked mathematical derivations / 矩陣方程、向量及完整的數學推導；
+- a Traditional Chinese chapter title and introductory note / 繁體中文章節標題與引言；
+- a limited Simplified Chinese section heading, included to demonstrate font switching without disrupting the page design / 少量簡體中文小節標題，用於展示字體切換而不影響整體版面；
+- a short PyTorch tensor example set in monospaced type like a displayed formula / 以等寬字體、仿照陳列公式排版的簡短 PyTorch 張量示例；
+- definitions, remarks, and margin notes using the wide-margin layout and dark-grey boxes / 採用寬邊註排版與深灰色框的定義、註釋及頁邊筆記。
 
 These examples are intentionally brief. They show that one document can combine mathematics, English, Traditional Chinese, Simplified Chinese, and source code while keeping the main chapter visually consistent.
 
-## Requirements
+這些示例刻意保持簡短，用於說明同一份文檔可以在維持主要章節視覺一致的情況下，混合數學、英文、繁體中文、簡體中文與源代碼。
+
+## Requirements / 環境要求
 
 Install a TeX distribution that provides XeLaTeX, `latexmk`, Biber, MakeIndex, and the configured fonts. KaoNotes preserves Noto Serif/Sans TC for Traditional Chinese, uses LXGW Neo ZhiSong for the limited Simplified Chinese example, and uses JetBrains Mono for code. You may replace these names in `main.tex` with installed alternatives. XeLaTeX is required for the multilingual settings.
 
-## Quick start
+請安裝包含 XeLaTeX、`latexmk`、Biber、MakeIndex 及所需字體的 TeX 發行版。KaoNotes 保留 Noto Serif/Sans TC 作為繁體中文字體，少量簡體中文示例使用 LXGW Neo ZhiSong，代碼使用 JetBrains Mono。你可以在 `main.tex` 中將這些字體名稱替換為本機已安裝的其他字體。多語設定必須使用 XeLaTeX。
 
-1. Clone or download this repository.
-2. Edit the title, subtitle, author, and language settings in `main.tex`.
-3. Create a chapter such as `chapters/my-notes.tex`.
-4. Add `\input{chapters/my-notes.tex}` in the main-body section of `main.tex`.
-5. Build the document:
+## Quick start / 快速開始
+
+1. Clone or download this repository. / 複製或下載此倉庫。
+2. Edit the title, subtitle, author, and language settings in `main.tex`. / 在 `main.tex` 中修改標題、副標題、作者與語言設定。
+3. Create a chapter such as `chapters/my-notes.tex`. / 建立章節文件，例如 `chapters/my-notes.tex`。
+4. Add `\input{chapters/my-notes.tex}` in the main-body section of `main.tex`. / 在 `main.tex` 的正文部分加入 `\input{chapters/my-notes.tex}`。
+5. Build the document. / 編譯文檔：
 
 ```powershell
 .\build.ps1
 ```
 
-On any platform with `latexmk`, run:
+On any platform with `latexmk`, run: / 在任何已安裝 `latexmk` 的平台上，可執行：
 
 ```sh
 latexmk main.tex
@@ -58,22 +74,26 @@ latexmk main.tex
 
 The generated `main.pdf` is intentionally not tracked during development.
 
-## Examples
+開發期間產生的 `main.pdf` 不會納入版本追蹤。
+
+## Examples / 示例
 
 The complete file [`examples/multilingual-code.tex`](examples/multilingual-code.tex) demonstrates:
 
-- English mathematical writing and a definition box;
-- a Traditional Chinese note with mixed English terminology;
-- a Simplified Chinese note and a dark-grey information box;
-- a monochrome Python listing with a caption.
+完整示例文件 [`examples/multilingual-code.tex`](examples/multilingual-code.tex) 包含：
 
-Compile the example from the repository root:
+- English mathematical writing and a definition box / 英文數學寫作與定義框；
+- a Traditional Chinese note with mixed English terminology / 混合英文術語的繁體中文筆記；
+- a Simplified Chinese note and a dark-grey information box / 簡體中文筆記與深灰色資訊框；
+- a monochrome Python listing with a caption / 附有標題的單色 Python 代碼區塊。
+
+Compile the example from the repository root: / 在倉庫根目錄編譯示例：
 
 ```sh
 xelatex -output-directory=examples examples/multilingual-code.tex
 ```
 
-Use the same patterns in a chapter:
+Use the same patterns in a chapter: / 可在章節中使用相同寫法：
 
 ```tex
 \section{繁體中文範例}
@@ -88,22 +108,30 @@ def square(x):
 \end{lstlisting}
 ```
 
-## Project structure
+## Project structure / 專案結構
 
-- `main.tex` - document configuration and entry point
-- `chapters/` - research-note chapters
-- `examples/` - complete multilingual and source-code examples
-- `kaobook.cls` and `kao*.sty` - upstream class and supporting packages
-- `build.ps1` and `latexmkrc` - reproducible local build configuration
+- `main.tex` - document configuration and entry point / 文檔設定與入口文件
+- `chapters/` - research-note chapters / 研究筆記章節
+- `examples/` - complete multilingual and source-code examples / 完整的多語與源代碼示例
+- `kaobook.cls` and `kao*.sty` - upstream class and supporting packages / 上游文檔類別與配套套件
+- `build.ps1` and `latexmkrc` - reproducible local build configuration / 可重現的本機編譯設定
 
-## Permissions and licensing
+## Permissions and licensing / 使用權限與授權
 
 This repository is derived from Federico Marotta's [kaobook](https://github.com/fmarotta/kaobook), itself based on work by Ken Arroyo Ohori and Tufte-LaTeX. Upstream authorship is preserved in the source headers and `MANIFEST.md`.
 
+本倉庫改編自 Federico Marotta 的 [kaobook](https://github.com/fmarotta/kaobook)，而 kaobook 本身以 Ken Arroyo Ohori 與 Tufte-LaTeX 的工作為基礎。上游作者資訊保留於源文件標頭與 `MANIFEST.md` 中。
+
 The kaobook-derived class and package files remain under the LaTeX Project Public License 1.3 or later, as described in `MANIFEST.md`. That licence permits use, study, modification, and redistribution under its terms. Documents that you produce with KaoNotes remain your own work.
+
+由 kaobook 衍生的文檔類別及套件文件仍依 `MANIFEST.md` 所述，採用 LaTeX Project Public License 1.3 或更新版本。該授權允許依其條款使用、研究、修改及再發佈。使用 KaoNotes 製作的文檔仍屬於其作者自己的作品。
 
 Upstream templates and examples retain their stated CC0 dedication. The maintainer's newly written study-note prose and project documentation remain copyright J Song (Alex); no additional content licence is granted until a separate licence is selected for the first public release. See `NOTICE.md` for the file-level attribution boundary.
 
-## Contact
+上游模板與示例保留其原有的 CC0 聲明。維護者新撰寫的學習筆記正文與專案文檔之版權屬 J Song (Alex)；在首次正式發佈另行選定授權以前，未授予額外的內容使用許可。各文件的歸屬界線請參閱 `NOTICE.md`。
+
+## Contact / 聯絡方式
 
 KaoNotes is maintained by J Song (Alex), [@AlexandraSloan3](https://github.com/AlexandraSloan3). Academic and direct enquiries may be sent to [jsong.alex@proton.me](mailto:jsong.alex@proton.me). For usage questions, reproducible build problems, or feature requests, open a [GitHub issue](https://github.com/AlexandraSloan3/kaonotes/issues). Please include the TeX engine, operating system, and a minimal example when reporting a compilation problem.
+
+KaoNotes 由 J Song (Alex)，[@AlexandraSloan3](https://github.com/AlexandraSloan3) 維護。學術或直接查詢可寄至 [jsong.alex@proton.me](mailto:jsong.alex@proton.me)。如有使用問題、可重現的編譯問題或功能建議，請提交 [GitHub issue](https://github.com/AlexandraSloan3/kaonotes/issues)。回報編譯問題時，請附上 TeX 引擎、作業系統及最小示例。
