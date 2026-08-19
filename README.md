@@ -10,13 +10,12 @@
 
 ## Research context / 研究背景
 
-KaoNotes began as a personal typesetting tool for organising mathematics and computer-science notes during KAN research preparation. This repository publishes the framework as a standalone academic tool for general use. The author's research notes and research process remain personal and are outside the public scope of this project.
-
-KaoNotes 最初是作者在準備 KAN 研究期間，用來整理數學與計算機科學筆記的個人排版工具。本倉庫將框架作為獨立的學術工具公開，供一般使用。作者的研究筆記與研究過程仍屬個人內容，不在本專案的公開範圍內。
+KaoNotes began as a personal typesetting tool for organising mathematics and computer-science notes during KAN research preparation. This repository publishes the framework as a standalone academic tool for general use. 
+KaoNotes 最初是在準備 KAN 研究期間，用來整理數學與計算機科學筆記的個人排版工具。本倉庫將框架作為獨立的學術工具公開，供一般使用。
 
 The linear-algebra material is based on the author's own study notes made while working through Gilbert Strang's *Introduction to Linear Algebra* and MIT 18.06. The repository records the author's explanations, calculations, and research connections; it does not reproduce the textbook text.
 
-線性代數內容以作者研讀 Gilbert Strang 的 *Introduction to Linear Algebra* 與 MIT 18.06 時所作的學習筆記為基礎。本倉庫記錄作者自己的解釋、計算與研究聯繫，不重製教科書原文。
+線性代數內容以研讀 Gilbert Strang 的 *Introduction to Linear Algebra* 與 MIT 18.06 時所作的學習筆記為基礎。本倉庫記錄作者自己的解釋、計算與研究聯繫，不重製教科書原文。
 
 Current goals / 目前目標：
 
