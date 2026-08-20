@@ -20,6 +20,9 @@ KaoNotes 最初是在準備 KAN 研究期間，用來整理數學與計算機科
 
 ## Preview / 預覽
 [`kaonotes-preview.pdf`](kaonotes-preview.pdf)
+
+## 如果有用請star,讓更多有需要的人發現該學術工具
+
 ## Writing scope / 書寫範圍
 
 KaoNotes can be used for mathematics and computer-science writing, including lecture notes, derivations, proofs, formulas, algorithms, code examples, and research notes. It supports English, Traditional Chinese, Simplified Chinese, and mixed-language documents, so its scope is not limited to the linear-algebra example included in this repository.
